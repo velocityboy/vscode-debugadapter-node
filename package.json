@@ -1,7 +1,7 @@
 {
 	"name": "generator",
 	"displayName": "Generator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "andreweinand",
 	"description": "Generator",
 	"author": {
@@ -14,10 +14,10 @@
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-debugadapter-node.git"
+		"url": "https://github.com/velocityboy/vscode-debugadapter-node.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Microsoft/vscode-debugadapter-node/issues"
+		"url": "https://github.com/velocityboy/vscode-debugadapter-node/issues"
 	},
 	"dependencies": {
 	},
