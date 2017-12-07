@@ -57,13 +57,13 @@ export class DebugClient extends ProtocolClient {
 	 *     return dc.hitBreakpoint({ program: 'test.js' }, 'test.js', 15);
 	 * });
 	 */
-	constructor(runtime: string, executable: string, debugType: string, spwanOptions?: cp.SpawnOptions) {
+	constructor(runtime: string, executable: string, debugType: string, enableStderr: boolean, spwanOptions?: cp.SpawnOptions) {
 		super();
 		this._runtime = runtime;
 		this._executable = executable;
 		this._spawnOptions= spwanOptions;
 		this._enableStderr = false;
-		this._debugType = debugType;
+		this._debugType = enableStderr;
 		this._supportsConfigurationDoneRequest = false;
 
 		if (DebugClient.CASE_INSENSITIVE_FILESYSTEM === undefined) {
